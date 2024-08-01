@@ -7,7 +7,13 @@ body {
 
 }
 
-
+.zety img{
+  width: 90px;
+  position: relative;
+  left: 270px;
+  bottom: 50px;
+  
+}
 .App{
   position: relative;
   right: 80px;
@@ -24,12 +30,15 @@ body {
   bottom: 3px;
   text-decoration: none;
   text-indent: 10px;
-  background-color: rgb(37, 37, 138);
+  background-color: rgb(44, 39, 187);
   color: white;
   border-radius: 25px;
   
 }
 
+.account a:hover{
+  background-color: blue;
+}
 .navbar a {
   float: right;
 
@@ -50,6 +59,7 @@ body {
 
 
 .dropdown .dropbtn {
+  
   font-size: 15px;
   border: none;
   outline: none;
@@ -58,22 +68,27 @@ body {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
 }
 
 .dropdown img{
+  position: relative;
+  top: 12px;
   width: 100px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red ;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  background-color: #f9f9f9 ;
 }
 
 .dropdown-content {
-
+ 
   display: none ;
   position: absolute ;
   background-color: #f9f9f9 ;
   min-width: 350px ;
+  
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
   z-index: 1 ;
 }
@@ -81,7 +96,7 @@ body {
 .dropdown-content a {
   float: none ;
   color: black ;
-  padding: 8px 16px ; /* Adjust padding to move text */
+  padding: 8px 16px ; 
   text-decoration: none ;
   font-size: 15px;
   display: block ;
@@ -89,8 +104,9 @@ body {
 }
 
 p{
-
-  text-indent: 15px;
+  position: relative;
+ bottom: 10px;
+  text-indent: 14px;
 }
 
 .dropdown-content a:hover {
@@ -102,12 +118,500 @@ p{
   display: block;
 }
 
-.text{
+.text {
+  
   position: relative;
   left: 150px;
-  bottom: 100px;
+  bottom: 90px;
+  font-size: 13px;
 }
-.move{
+h3{
+  position: relative;
+  left: 15px;
+}
+/* .move{
+  position: relative;
+  bottom: 90px;
+  left: 40px;
+  font-size: 12px;
+  margin-bottom: 100px;
+}
+
+.move img{
+  position: relative;
+  top: 70px;
+  right: 35px;
+  width: 40px;
+} */
+
+/* tools */
+
+.dropdown-tools {
+  display: none;
+  position: absolute;
+  background-color: #da1d1d;
+  min-width: 450px;
+  min-height: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown when its parent is hovered */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.tools {
+  background-color: #f9f9f9;
+  min-width: 450px;
+  min-height: 90px; /* Allow height to adjust based on content */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Corrected shadow */
+  position: relative; /* Ensures it stays within the flow of .dropdown-content */
+  padding: 20px; /* Adjust padding for internal spacing */
+}
+
+
+.tools a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+  position: relative;
+  top: 20px; /* Increased for better readability */
+  margin-bottom:-25px ;
+  
+  margin-left: -10px; /* Adjusted spacing */
+}
+.tools a img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.tools p {
+  margin: 0 0 -110px 40px;
+  position: relative;
+  top: 30px;
+  font-size: 12px;
+  color: #555;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.tools p:hover {
+  color: #007BFF;
+  filter: brightness(0.8);
+}
+
+.tools a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+  filter: brightness(0.8);
+}
+
+
+
+/* resume */ 
+
+.dropdown-Resume {
+
+  display: none ;
+  position: absolute ;
+  background-color: #f9f9f9 ;
+  min-width: 400px ;
+  height: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+  z-index: 1 ;
+}
+
+.Resume {
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 450px;
+  height: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 50px; /* This includes the 50px bottom movement */
+}
+
+/* Assuming you want to show the dropdown when its parent is hovered */
+.dropdown:hover .Resume {
+  display: block;
+}
+
+
+.Resume a {
+  text-decoration: none;
   position: relative;
   bottom: 70px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  /* margin-bottom: 8px; */
+}
+
+
+
+.Resume a img {
+  text-decoration: none;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.Resume p {
+  text-decoration: none;
+  bottom: 70px;
+  margin: 0 0 15px 34px;
+  font-size: 12px;
+  color: #555;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+.Resume p:hover{
+  color: #007BFF;
+  filter: brightness(0.8);
+}
+
+.Resume a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+  text-decoration: none;
+  filter: brightness(0.8);
+}
+
+.resume-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.resume-button .button {
+  display: inline-block;
+  padding: 20px 140px;
+  color: #010101;
+  background-color: #bd9631;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button .button:hover {
+  background-color: #dac105;
+}
+
+
+/* CV */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 400px;
+  height: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.cv {
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 450px;
+  height: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 50px; /* This includes the 50px bottom movement */
+}
+
+/* Show the dropdown when its parent is hovered */
+.dropdown:hover .cv {
+  display: block;
+}
+
+.cv a {
+  text-decoration: none;
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+}
+
+.cv a img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.cv p {
+  margin: 0 0 15px 34px;
+  font-size: 12px;
+  color: #555;
+  position: relative;
+  bottom: 74px;
+  left: 5px;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.cv p:hover {
+  color: #007BFF;
+  filter: brightness(0.8);
+}
+
+.cv a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+  filter: brightness(0.8);
+}
+
+
+/* Style for the "Create Your CV Now" button */
+.cv-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cv-button .button {
+  display: block;
+  padding: 20px 140px;
+  color: #0f0f0f;
+  background-color: #bd9631;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cv-button .button:hover {
+  background-color: #dac105;
+}
+/* cover letter */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #de6c6c;
+  min-width: 400px;
+  height: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.cover-letter {
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 40px;
+  height: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 50px; /* This includes the 50px bottom movement */
+}
+
+/* Show the dropdown when its parent is hovered */
+.dropdown:hover .cover-letter {
+ 
+  display: block;
+}
+
+.cover-letter a {
+  text-decoration: none;
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+}
+
+.cover-letter a img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.cover-letter p {
+  position: relative;
+  bottom: 73px;
+  left: 5px;
+  margin: 0 0 15px 34px;
+  font-size: 12px;
+  color: #555;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.cover-letter p:hover {
+  color: #007BFF;
+  filter: brightness(0.8);
+}
+
+.cover-letter a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+  filter: brightness(0.8);
+}
+
+.cover-letter-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cover-letter-button .button {
+  display: inline-block;
+  padding: 15px 130px;
+  white-space: nowrap;
+  color: #010101;
+  background-color: #bd9631;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cover-letter-button .button:hover {
+  background-color: #dac105;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 450px;
+  height: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  
+}
+
+.career-blog {
+  text-decoration: none;
+  display: none;
+  position: absolute;
+ 	background-color: #f9f9f9;
+  min-width: 450px;
+  height: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 50px; /* This includes the 50px bottom movement */
+}
+
+/* Show the dropdown when its parent is hovered */
+.dropdown:hover .career-blog {
+  display: block;
+}
+
+.career-blog a {
+  text-decoration: none;
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+}
+
+.career-blog a img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.career-blog p {
+  margin: 0 0 15px 34px;
+  font-size: 12px;
+  color: #555;
+  bottom: 72px;
+  /* top: 30px; */
+  left: 2px;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.career-blog p:hover {
+  color: #007BFF;
+  filter: brightness(0.8);
+}
+
+.career-blog a:hover {
+  color: #007BFF;
+  text-decoration: underline;
+  filter: brightness(0.8);
+}
+
+
+/* about */
+
+.dropdown-about {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 450px;
+  height: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* This is the class for the About dropdown content */
+.about {
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 450px;
+  height: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 50px; /* This includes the 50px bottom movement */
+}
+
+/* Show the dropdown when its parent is hovered */
+.dropdown:hover .about {
+  display: block;
+}
+
+.about a {
+  text-decoration: none;
+  position: relative;
+  bottom: 70px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+}
+
+.about a img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.about p {
+  margin: 0 0 15px 34px;
+  font-size: 12px;
+  color: #555;
+  bottom: 72px;
+  left: 2px;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.about p:hover,
+.about a:hover {
+  color: #007BFF;
+  filter: brightness(0.8);
+}
+
+/* Ensure dropdown content class doesn't clash with about */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 450px;
+  height: 460px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
