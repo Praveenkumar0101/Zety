@@ -1,0 +1,38 @@
+/* CompanyLinks.css */
+
+.company-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    background-color: #f9f9f9; /* Optional: Background color */
+  }
+  
+  .company-link {
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .company-link:hover .company-name {
+    color: #1b2937; /* Optional: Change text color on hover */
+  }
+  
+  .company-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .company-link:hover .company-logo {
+    transform: scale(1.1); /* Optional: Zoom effect on hover */
+  }
+  
+  .company-name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
