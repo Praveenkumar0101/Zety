@@ -1,12 +1,23 @@
 /* CompanyLinks.css */
 
+
+.hired{
+  position: relative;
+  right: 90px;
+  text-wrap: nowrap;
+}
 .company-container {
+  gap: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0;
-    flex-wrap: wrap;
-    background-color: #f9f9f9; /* Optional: Background color */
+    position: relative;
+    top: 100px;
+    padding: 10px 260px ;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 80px;
+    background-color: #ecf2f5; /* Optional: Background color */
   }
   
   .company-link {
@@ -21,7 +32,7 @@
   }
   
   .company-logo {
-    width: 150px;
+    width: 100px;
     height: auto;
     margin-bottom: 10px;
     transition: transform 0.2s ease-in-out;
